@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+
+@-webkit-keyframes car {
+	0% {
+		left: 900px;
+	}
+	100% {
+		left: -100px;
+	}
+}
+
+@keyframes car {
+	0% {
+		left: 900px;
+	}
+	100% {
+		left: -100px;
+	}
+}
+h1 {
+	font-family: 'Lobster', sans-serif;
+}
+#track {
+	width: 900px;
+	height: 220px;
+	position: relative;
+	background: green;
+	overflow: hidden;
+	background: #444 url(../img/track.jpg) 0 0 repeat-x;
+	.car {
+		width: 50px;
+		height: 29px;
+		position: absolute;
+		bottom: 25px;
+		left: 700px;
+		background: url(../img/cars.png) 50% 0 no-repeat;
+		animation: car 5s linear infinite;
+		&.car1 {
+			bottom: 165px;
+			animation: car 3s linear infinite;
+			background-position: 50% 100%;
+		}
+
+		&.car2 {
+			bottom: 120px;
+			animation: car 6s linear infinite;
+			background-position: 50% -58px;
+		}
+
+		&.car3 {
+			bottom: 70px;
+			animation: car 4s linear infinite;
+			background-position: 50% -29px;
+		}
+		&.paused {
+			animation-play-state: paused;
+		}
+	}
+	.card {
+		border-radius: 10px;
+		box-shadow: 0 0 10px #222;
+		color: #fff;
+		left: 50%;
+		margin-left: -300px;
+		padding: 20px;
+		position: absolute;
+		text-align: center;
+		top: 15px;
+		transition: 1s all;
+		width: 600px;
+		visibility: hidden;
+		transform: scale(0);
+		* {
+			line-height: 120%;
+		}
+		&.active {
+			visibility: visible;
+			transform: scale(1);
+		}
+	}
+	.hooray {
+		background: #669966;
+		font-size: 18px;
+		a {
+			color: #fff
+		}
+		h1 {
+			margin: 0;
+			padding: 0;
+			line-height: 1.2em
+		}
+		.again {
+			text-decoration: none;
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+}
+.start {
+	color: #fff;
+	background: url(../img/flag.png) 25px 50% no-repeat red;
+	box-shadow: 0 0 10px 5px rgba(0,0,0,.2);
+	font-weight: bold;
+	font-size: 30px;
+	padding-left: 50px;
+	text-align: center;
+	line-height: 50px;
+	border-radius: 5px;
+	display: inline-block;
+	transition: all 0.3s;
+	cursor: pointer;
+	position: absolute;
+	transition: 0.3s all;
+	left: 50%;
+	width: 180px;
+	margin-left: -90px;
+	top: 40%;
+	visibility: hidden;
+	opacity: 0;
+	z-index: 1;
+	&.active {
+		visibility: visible;
+		opacity: 1;
+		&:hover {
+			opacity: 0.7;
+		}
+
+	}
+}
+
+.game {
+//	clear: both;
+ //	display: block;
+ //	margin: 20px 50px
+}
+
+.game:after,
+.clearer:after {
+	display: block;
+	height: 0;
+	line-height: 0;
+	content: "";
+	clear: both;
+}
+
+	.jumbotron {
+		background: #FE0000 url(../img/hero.jpg) 50% 50% no-repeat;
+		background-size: cover;
+		.container {
+			background: rgba(0, 0, 0, 0.5);
+			background: transparent;
+			color: #fff;
+			text-shadow: 1px 1px 1px #000;
+			h1,
+			h2,
+			h3 {
+				color: #fff;
+			}
+			a {
+				-webkit-transition: 0.3s all;
+				-o-transition: 0.3s all;
+				transition: 0.3s all;
+				&.btn-link {
+					color: #C794E9;
+					&:hover {
+						background: rgba(199, 148, 233, 0.3);
+						text-decoration: none;
+					}
+				}
+			}
+		}
+	}
+
+	#explain {
+		background: #FE0000 url("../img/playground.png") no-repeat scroll 98% bottom / 150px auto;
+		width: 50%;
+		float: right;
+		border-radius: 10px;
+		color: #fff;
+		padding: 20px 60px 60px 20px;
+		min-height: 160px;
+		margin: 30px 0;
+		> p {
+			line-height: 150%;
+			&.extra-padding {
+				padding-right: 160px;
+			}
+		}
+		h2 {
+			margin: 0 0 10px;
+		}
+		a {
+			color: #ffffff;
+			-webkit-transition: 0.3s all;
+			-o-transition: 0.3s all;
+			transition: 0.3s all;
+			border-bottom: solid 1px #ffffff;
+			text-decoration: none;
+			&:hover {
+				border-color: transparent;
+				text-decoration: none;
+			}
+		}
+	}
+#teddy {
+	position: absolute;
+	left: 50%;
+	top: 1%;
+	z-index: 9999;
+	width: 445px;
+	height: 453px;
+	background: url(../img/teddy.png) 0 0 no-repeat;
+	display: none;
+	.closeTeddy {
+		color: #000;
+		text-decoration: none;
+		position: absolute;
+		left: 95px;
+		top: 400px;
+		font-size: 24px;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}

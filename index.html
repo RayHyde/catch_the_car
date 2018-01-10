@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Playground File: Catch the Car</title>
+	<meta name="author" content="Ray Hyde | www.rayhyde.nl">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- <link rel="shortcut icon" href="images/favicon.png"> -->
+	<!--[if (lte IE 9)|!(IE)]><link rel="icon" href="favicon.ico"><![endif]-->
+	<script src="https://use.fontawesome.com/25a98fcc6a.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/racecar.css">
+</head>
+
+<body>
+<div class="jumbotron">
+	<div class="container">
+		<h1>Click a car and win a prize!</h1>
+	</div>
+</div>
+	<div class="container">
+
+		<div class="game">
+			<div id="track">
+			<div class="start active">Start!</div>
+				<div class="car car1 paused"></div>
+				<div class="car car2 paused"></div>
+				<div class="car car3 paused"></div>
+				<div class="car car4 paused"></div>
+				<div class="card hooray">
+				<h2>Hooray! You've won!</h2>
+				<p><a href="#" class="collect">Click here to collect your giant pink teddybear.</a></p>
+				<p><a href="" class="again">or Try again</a></p>
+			</div>
+			</div>
+		</div>
+		<h1>A classic arcade favourite</h1>
+		<h2>A simple, silly game — yet it increases your conversion!</h2>
+		<p>Include this game in your webshop and have your customers win prizes, such as different discount levels or free products.</p>
+		<p>The game has been made with CSS3 and jQuery. Mainly, the clicks and counters are jQuery while the animations are pure CSS. When speed is involved, it has built-in variables to easily adjust speed or difficulty level so you won't lose customers. But even then, hey, a booby prize can still be worth a product sample or free shipping!</p>
+		<p>This game is licensed under GNU General Public License v2.0. That means you may use it commercially. However, I would like to be notified if you use this game and remember, it needs tweaking to your specific needs and that is where I might be of service.</p>
+		<p>See more silly games like these at <a href="http://www.rayhyde.nl/playground/simple_games.html">my website</a>.</p>
+		<div id="explain">
+			<p>This project is part of my Playground - a collection of fun (and dare I say it: clever) stuff I made in the past, from jQuery games and plugins to CSS animation tricks.</p>
+			<p>Please drop in on my portfolio site <br><a href="http://www.rayhyde.nl">www.rayhyde.nl</a>!</p>
+		</div>
+	</div>
+
+	<div id="teddy"><a href="#" class="closeTeddy">Close</a>
+		</div>
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+	<script src="js/racecar.js"></script>
+
+</body>
+
+</html>
